@@ -1,5 +1,4 @@
-FROM centos:latest
-RUN yum install -y npm
+FROM node
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
